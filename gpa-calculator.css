@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #2f3542;
+}
+
+/* Form container styling */
+.fetch-details {
+    margin-top: 60px;
+    background-color: #ffffff;
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.fetch-details table {
+    width: 100%;
+    font-size: 16px;
+}
+
+.fetch-details td {
+    padding: 12px;
+}
+
+.fetch-details label {
+    font-weight: 500;
+}
+
+.fetch-details select,
+.fetch-details input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.fetch-details input[type="submit"] {
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.fetch-details input[type="submit"]:hover {
+    background-color: #187bcd;
+}
+
+/* Subjects header grid */
+.subjects-title-grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 2fr;
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    width: 70%;
+}
+
+/* Subject entries */
+.subjects-grid-container {
+    width: 70%;
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.subjects-grid-container div {
+    display: grid;
+    padding: 10px 0px;
+    grid-template-columns: 1fr 2fr 6fr 2fr;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    border-bottom: 3px solid rgb(214, 214, 214);
+}
+
+.subjects-grid-container div select {
+    height: 40px;
+    border-radius: 7px;
+}
+/* GPA result and button */
+.calculate-button-container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 12px 20px;
+    background-color: #f4f7fa;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.calculate-button-container1 {
+    display: none;
+}
+
+.calculate-button-container button {
+    padding: 12px 24px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculate-button-container button:hover {
+    background-color: #187bcd;
+}
+
+.calculate-button-container h3 {
+    font-size: 20px;
+    color: #2f3542;
+    margin: 0;
+}

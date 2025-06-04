@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DELETE</title>
+        <link rel="icon" href="icons/cgpa-icon.jpg">
+        <link rel="stylesheet" href="navigation-bar.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="delete.css">    
+    </head>
+    <body>
+        <div class="navigation-bar">
+            <p></p>
+            <p class="title">DELETE</p>
+            <a href="home.html"><button class="login-button">Home</button></a>
+        </div>
+        <div>
+            <a href="adminhome.html"><button>VIEW</button></a>
+            <a href="addnew.html"><button>ADD</button></a>
+            <a href="edit.html"><button>EDIT</button></a>
+        </div>
+        <div class="view-add-overall-container">
+            <div class="view-edit-container">
+                <h3>DELETE</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="regulation">Choose the Regulation</label>
+                        </td>
+                        <td>
+                            <select name="regulation" id="regulation">
+                                <option value="2025">2025</option>
+                                <option value="2021">2021</option>
+                                <option value="2017">2017</option>
+                                <option value="2013">2013</option>   
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="department">Choose the Department</label>
+                        </td>
+                        <td>
+                            <select name="department" id="department">
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="MECH">MECH</option>
+                                <option value="CIVIL">CIVIL</option> 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="semester">Choose the Semester</label>
+                        </td>
+                        <td>
+                            <select name="Semester" id="Semester">
+                                <option value="all">All</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Fetch Subjects" onclick="
+                            document.querySelector('.subjects-grid-container1').classList.remove('subjects-grid-container1');
+                            document.querySelector('.subjects-title-grid-container').classList.remove('subjects-title-grid-container1');">
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <div class="subjects-title-grid-container subjects-title-grid-container1">
+                <div>semester</div>
+                <div>subject code</div>
+                <div>subject name</div>
+                <div>grade</div>
+                <div>Action</div>
+            </div>
+            <div class="subjects-grid-container subjects-grid-container1">
+                <div class="subject-details">
+                    <p>01</p>
+                    <p>CS3491</p>
+                    <p>ALGORITHMS</p>
+                    <p>3</p>
+                    <button>Delete</button>
+                </div>
+                <div class="subject-details">
+                    <p>01</p>
+                    <p>CS3491</p>
+                    <p>ALGORITHMS</p>
+                    <p>3</p>
+                    <button>Delete</button>
+                </div>
+                <div class="subject-details">
+                    <p>01</p>
+                    <p>CS3491</p>
+                    <p>ALGORITHMS</p>
+                    <p>3</p>
+                    <button>Delete</button>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    </body>
+</html>

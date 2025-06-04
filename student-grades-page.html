@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XXXXX</title>
+        <link rel="icon" href="icons/cgpa-icon.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="navigation-bar.css">
+        <link rel="stylesheet" href="student-grades-page.css">
+    </head>
+    <body>
+        <div class="navigation-bar">
+            <p></p>
+            <p class="title">CGPA CALCULATOR</p>
+            <button class="login-button">Log Out</button>
+        </div>
+        <center>
+            <div class="overall-details-container">
+                <div class="student-details">
+                    <div class="name-reg-no">
+                        <table>
+                            <tr>
+                                <td>REG NO.:</td>
+                                <td class="js-name">-</td>
+                            </tr>
+                            <tr>
+                                <td>NAME:</td>
+                                <td class="js-reg-no">-</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="cgpa-class">
+                        <table>
+                            <tr>
+                                <td>CGPA:</td>
+                                <td class="js-overall-cgpa">-</td>
+                            </tr>
+                            <tr>
+                                <td>Class:</td>
+                                <td class="js-class">-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="grade-details">
+                    <div class="semesters">
+                        <button class="but but-1 active" data-semester="sem1">SEM 1</button>
+                        <button class="but but-2" data-semester="sem2">SEM 2</button>
+                        <button class="but but-3" data-semester="sem3">SEM 3</button>
+                        <button class="but but-4" data-semester="sem4">SEM 4</button>
+                        <button class="but but-5" data-semester="sem5">SEM 5</button>
+                        <button class="but but-6" data-semester="sem6">SEM 6</button>
+                        <button class="but but-7" data-semester="sem7">SEM 7</button>
+                        <button class="but but-8" data-semester="sem8">SEM 8</button>
+
+                    </div>
+                    <div class="grades">
+                        <div class="grades-heading">
+                            <p>SEM</p>
+                            <p>SUB CODE</p>
+                            <p>SUB NAME</p>
+                            <p>GRADE</p>
+                        </div>
+                        <div class="subjects-and-grades">
+                        </div>
+                        <div class="gpa-cgpa">
+                            <button class="js-calculate-button">calculate</button>
+                            <div>
+                                <span class="final-gpa">GPA = -       </span>
+                            </div>
+                            <button onclick="downloadPdf()">Download PDF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+        <script src="student-grades-page.js"></script>
+    </body>
+</html>

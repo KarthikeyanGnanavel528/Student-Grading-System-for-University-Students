@@ -1,0 +1,69 @@
+/* .name-validate,
+.reg-no-validate
+{
+    margin-top: 5px;
+    line-height: 0px;
+    color: red;
+    font-size: smaller;
+    display: none;
+} */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #2f3542;
+}
+
+.details-container {
+    margin: 80px auto;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.details-container table {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.details-container label {
+    font-weight: 500;
+}
+
+.details-container input[type="text"],
+.details-container input[type="number"],
+.details-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.details-container p {
+    font-size: 13px;
+    color: #e74c3c;
+    margin: 4px 0 12px 0;
+    display: none; /* Initially hidden; show via JS if needed */
+}
+
+.js-save-button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.js-save-button:hover {
+    background-color: #187bcd;
+}

@@ -1,0 +1,116 @@
+.pop-up {
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.pop-up div input[type="submit"]  {
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #2f3542;
+}
+
+.login-container,
+.pop-up div{
+    margin-top: 80px;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.login-container table {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.login-container label {
+    font-weight: 500;
+}
+
+.login-container input[type="email"],
+.login-container input[type="number"],
+.login-container input[type="password"],
+.login-container input[type="text"],
+.pop-up div input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.login-container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.email-validation,
+.password-validation {
+    color: #ff4d4f;
+    font-size: 13px;
+    margin: 5px 0 0 0;
+    display: none; /* You can show dynamically if needed */
+}
+
+.login-container input[type="submit"],
+.pop-up div input[type="submit"]{
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #187bcd;
+}
+
+.login-container p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-container a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.forget-password-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.forget-password-button {
+    color: #1e90ff;
+    border: none;
+    background-color: transparent;
+}
+
+.forget-password-button:hover {
+    text-decoration: underline #187bcd;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPA calculator</title>
+        <link rel="icon" href="icons/cgpa-icon.jpg">
+        <link rel="stylesheet" href="navigation-bar.css">
+        <link rel="stylesheet" href="gpa-calculator.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">        
+    </head>
+    <body>
+        <div class="navigation-bar">
+            <p></p>
+            <p class="title">GPA CALCULATOR</p>
+            <a href="home.html"><button class="login-button">Home</button></a>
+        </div>
+        <center>
+            <div class="fetch-details">
+                <form action="phps/fetch-subjects-gpa.php" method="post" onsubmit="submitData(event, 'gpa')">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="regulation">Choose the Regulation</label>
+                        </td>
+                        <td>
+                            <select name="regulation" id="regulation" class="reg-dropdown"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="department">Choose the Department</label>
+                        </td>
+                        <td>
+                            <select name="department" id="department" class="dept-dropdown"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="semester">Choose the Semester</label>
+                        </td>
+                        <td>
+                            <select name="semester" id="semester" class="sem-dropdown"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <input type="submit" value="Fetch Subjects" name="fetch" onclick="fetchButton()">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+            <div class="subjects-title-grid-container">
+                <div>semester</div>
+                <div>subject code</div>
+                <div>subject name</div>
+                <div>grade</div>
+            </div>
+            <div class="subjects-grid-container subjects-grid-container1"></div>
+            <div class="calculate-button-container calculate-button-container1">
+                <button onclick="gpaCalculation(subData)">calculate</button>
+                <h3 class="final-gpa"></h3>
+            </div>
+        </center>
+        <script src="gpa-calculator.js"></script>
+    </body>
+</html>

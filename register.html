@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="icon" href="icons/cgpa-icon.jpg">
+        <link rel="stylesheet" href="navigation-bar.css">
+        <link rel="stylesheet" href="register.css">
+        <link rel="stylesheet" href="general.css"> 
+    </head>
+    <body>
+        <div class="pop-up">
+            <div>
+                <label for="">
+                    Enter the Verication Code:
+                </label><br>
+                <input type="number" class="otp-input" maxlength="4"><br>
+                <input type="submit" class="otp-submit-button">
+            </div>
+        </div>
+        <div class="navigation-bar">
+            <p></p>
+            <p class="title">REGISTER</p>
+            <a href="admin-login.html"><button class="login-button">Admin Login</button></a>
+        </div>
+        <center>
+            <form action="">
+            <div class="login-container">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="">Email<sup> *</sup></label>
+                        </td>
+                        <td>
+                            <input type="email" class="js-email" required>
+                            <p class="email-validation">it must end with @gmail.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Password<sup> *</sup></label>
+                        </td>
+                        <td>
+                            <input type="password" class="js-password" required>
+                            <p class="password-validation">must contain 1 uppercase, 1 lowercase, 1 digit, 1 special character</p>
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Confirm<sup> *</sup></label>
+                        </td>
+                        <td>
+                            <input type="password" class="js-confirm" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                           <input type="checkbox" class="js-show-password">Show Password 
+                        </td>
+                    </tr>
+                </table>
+                <button class="js-register-button">Register</button>   
+                <p>Existing user?<a href="student-login.html">Login</a></p>
+            </div>
+        </form>
+        </center>
+    <script type="module" src="register.js"></script>
+    </body>
+</html>

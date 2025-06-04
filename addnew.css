@@ -1,0 +1,9 @@
+.new-subject-input,
+.added-subjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.new-subject-input1,
+.added-subjects1 {
+    opacity: 0;
+}

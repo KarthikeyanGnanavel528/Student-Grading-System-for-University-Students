@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" href="icons/cgpa-icon.jpg">
+        <link rel="stylesheet" href="navigation-bar.css">
+        <link rel="stylesheet" href="student-login.css">
+        <link rel="stylesheet" href="general.css">    
+    </head>
+    <body>
+        <div class="pop-up">
+            <div>
+                <label for="">
+                    Enter your email:
+                </label>
+                <input type="email" class="forget-password-email"><br>
+                <input type="submit" class="js-submit-button">
+            </div>
+        </div>
+        <div class="navigation-bar">
+            <a href="home.html"><button class="login-button">Home</button></a>
+            <p class="title">LOGIN</p>
+            <a href="admin-login.html"><button class="login-button">Admin Login</button></a>
+        </div>
+        <center>
+            <div class="login-container">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="">Email<sup> *</sup></label>
+                            </td>
+                            <td>
+                                <input type="email" class="js-email" name="email" required>
+                                <p class="email-validation">it must end with @gmail.com</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">Password<sup> *</sup></label>
+                            </td>
+                            <td>
+                                <input type="password" class="js-password" name="password" required>
+                                <p class="password-validation">must contain 1 uppercase, 1 lowercase, 1 digit, 1 special character</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                            <input type="checkbox" class="js-show-password">Show Password 
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Login" class="js-login-button">
+                    <div class="forget-password-container">
+                        <p>New user?<a href="register.html">Register</a></p>
+                        <button class="forget-password-button">Forget Password</button>
+                    </div>
+                    
+            </div>
+        </center>
+    <script src="student-login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CGPA Calculator</title>
+        <link rel="icon" href="icons/cgpa-icon.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="navigation-bar.css">
+        <link rel="stylesheet" href="student-details.css">
+    </head>
+    <body>
+        <div class="navigation-bar">
+            <p></p>
+            <p class="title">CGPA CALCULATOR</p>
+            <a href="register.html"><button class="login-button">Back</button></a>
+        </div>
+        <div class="details-container">
+            <table>
+                <tr>
+                    <td><label for="name">Name (Initial at back)<sup> *</sup></label></td>
+                    <td>
+                        <input type="text" id="name" class="js-name">
+                        <p class="name-validate">Length must be within 40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="reg_no">Register Number<sup> *</sup></label></td>
+                    <td>
+                        <input type="number" id="reg_no"  class="js-reg-no">
+                        <p class="reg-no-validate">Must be 12 digits long</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="regulation">Regulation<sup> *</sup></label></td>
+                    <td>
+                        <select id="regulation" class="js-regulation">
+                            <option value="2021">2021</option>
+                            <option value="2017">2017</option>
+                            <option value="2013">2013</option>
+                            <option value="2009">2009</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="department">Department</label></td>
+                    <td>
+                        <select id="department" class="js-department">
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="MECH">MECH</option>
+                            <option value="CIVIL">CIVIL</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+            <button class="js-save-button">Save</button>
+            </center>
+        </div>
+    </body>
+    <script type="module" src="student-details.js"></script>
+</html>

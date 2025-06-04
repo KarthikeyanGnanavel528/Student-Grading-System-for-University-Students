@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADD NEW</title>
+        <link rel="icon" href="icons/cgpa-icon.jpg">
+        <link rel="stylesheet" href="navigation-bar.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="addnew.css">  
+    </head>
+    <body>
+        <div class="navigation-bar">
+            <p></p>
+            <p class="title">ADD NEW</p>
+            <a href="home.html"><button class="login-button">Home</button></a>
+        </div>
+        <div>
+            <a href="adminhome.html"><button>VIEW</button></a>
+            <a href="edit.html"><button>EDIT</button></a>
+            <a href="delete.html"><button>DELETE</button></a>
+        </div>
+        <div class="view-add-overall-container">
+            <div class="add-container">
+                <h3>ADD NEW</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="regulation">Add the Regulation year</label>
+                        </td>
+                        <td>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="department">Add department name</label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="semester">Choose the Semester</label>
+                        </td>
+                        <td>
+                            <select name="Semester" id="Semester">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Next" onclick="
+                                document.querySelector('.new-subject-input').classList.remove('new-subject-input1');">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </div>   
+        </div>
+        </div>
+        <div class="new-subject-input new-subject-input1">
+            <input type="text" placeholder="enter the subject code">
+            <input type="text" placeholder="enter the subject name">
+            <input type="number" placeholder="enter credit">
+            <button onclick="
+            document.querySelector('.added-subjects').classList.remove('added-subjects1');">Add</button>
+        </div>
+        <div class="added-subjects added-subjects1">
+            <p>01</p>
+            <p>ALGORITHMS</p>
+            <p>4</p>
+            <button>Delete</button>
+        </div>
+    </body>
+</html>

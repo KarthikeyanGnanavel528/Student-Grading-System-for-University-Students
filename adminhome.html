@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADMIN HOME</title>
+        <link rel="icon" href="icons/cgpa-icon.jpg">
+        <link rel="stylesheet" href="navigation-bar.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="adminhome.css">  
+    </head>
+    <body>
+        <div class="navigation-bar">
+            <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+            <p class="title">ADMIN HOME</p>
+            <a href="home.html"><button class="login-button">Home</button></a>
+        </div>
+        <div class="side-bar">
+            <a href="addnew.html"><button>ADD</button></a>
+            <a href="edit.html"><button>EDIT</button></a>
+            <a href="delete.html"><button>DELETE</button></a>
+        </div>
+        <center>
+        <div class="view-add-overall-container">
+            <div class="view-edit-container">
+                <h3>view</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="regulation">Choose the Regulation</label>
+                        </td>
+                        <td>
+                            <select name="regulation" class="regulation" id="regulation">
+                                <option value="2025">2025</option>
+                                <option value="2021">2021</option>
+                                <option value="2017">2017</option>
+                                <option value="2013">2013</option>   
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="department">Choose the Department</label>
+                        </td>
+                        <td>
+                            <select name="department" id="department" class="department">
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="MECH">MECH</option>
+                                <option value="CIVIL">CIVIL</option> 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="semester">Choose the Semester</label>
+                        </td>
+                        <td>
+                            <select name="Semester" id="Semester" class="semester">
+                                <option value="all">All</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Fetch Subjects" onclick="fetchButton(event);">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="overall-container">
+                <div class="subjects-title-grid-container" onclick="
+            ">
+                <div>semester</div>
+                <div>subject code</div>
+                <div>subject name</div>
+                <div>Credits</div>
+                </div>
+                <div class="subjects-grid-container">
+                    <div class="subject-details">
+                        <p>01</p>
+                        <p>CS3491</p>
+                        <p>ALGORITHMS</p>
+                        <p>3</p>
+                    </div>
+                    <div class="subject-details">
+                        <p>01</p>
+                        <p>CS3491</p>
+                        <p>ALGORITHMS</p>
+                        <p>3</p>
+                    </div>
+                    <div class="subject-details">
+                        <p>01</p>
+                        <p>CS3491</p>
+                        <p>ALGORITHMS</p>
+                        <p>3</p>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            
+        </center>
+            <script src="adminhome.js"></script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+*{
+    font-family:Roboto,arial;
+}
+body {
+    margin: 0%;
+    background-color: #f0f4f8;
+}
+button {
+    cursor: pointer;
+}
+sup {
+    color: red;
+    font-size: large;
+}

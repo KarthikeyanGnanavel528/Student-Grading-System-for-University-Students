@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #2f3542;
+}
+
+.overall-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); 
+    padding: 20px;
+}
+
+.gpa-cgpa-container {
+    display: flex;
+    gap: 30px;
+    background-color: #ffffff;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cgpa-buttons-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.cgpa-buttons-container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Buttons */
+.cgpa-buttons-container button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cgpa-buttons-container button:hover {
+    background-color: #187bcd;
+}

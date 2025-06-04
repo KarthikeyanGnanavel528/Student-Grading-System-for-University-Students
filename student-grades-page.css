@@ -1,0 +1,146 @@
+
+ 
+
+.overall-details-container {
+    margin-top: 5%;
+    width: 80%;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 3px gray;
+}
+
+.student-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;    
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.student-details table td {
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.semesters {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.semesters button {
+    padding: 10px 12px;
+    border: none;
+    
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.active {
+    background-color: #0b5ed7; 
+    color: white;
+    border-radius: 10px;
+}
+
+.grades-heading, .subject-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 2fr;
+    column-gap: 10px;
+    text-align: left;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+}
+
+.grades-heading {
+    background-color: #0b5ed7;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grades-heading p {
+    padding: 8px 10px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.subjects-and-grades {
+    height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.subjects-and-grades > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 2fr;
+    column-gap: 10px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+.subjects-and-grades div select {
+    border-radius: 7px;
+}
+.subjects-and-grades div p {
+    text-align: center;
+}
+.gpa-cgpa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.gpa-cgpa div {
+    border: 1px solid #d0d0d0;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #222;
+    background-color: #f8f9fa;
+}
+
+.gpa-cgpa button {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gpa-cgpa button:hover {
+    background-color: #0b5ed7;
+}
+
+
+
+.print-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .print-button:hover {
+    background-color: #2980b9;
+  }
+  
