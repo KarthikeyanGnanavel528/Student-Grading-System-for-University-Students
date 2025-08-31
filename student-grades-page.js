@@ -49,12 +49,17 @@ for (let i = 1; i <= 8; i++) {
 
 Promise.all(promises).then(() => {
     localStorage.setItem('details', JSON.stringify(details));
+    details = JSON.parse(localStorage.getItem('details')) || {};
+    // safe initial load
+    let curSem = 'sem1';
+    showSubjects('sem1');
 });
-details = JSON.parse(localStorage.getItem('details'));
-let grade_details  = JSON.parse(localStorage.getItem('grade_details'));
+
+details = JSON.parse(localStorage.getItem('details')) || {};
+let grade_details  = JSON.parse(localStorage.getItem('grade_details')) || {};
 cgpaCalculation();
 let curSem = 'sem1';
-showSubjects('sem1', document.querySelector('.sd1'));
+
 n = details['sem1']['credits'].length;
 editButtonElement.innerText = 'Edit';
 editButtonElement.classList.add('edit-button');

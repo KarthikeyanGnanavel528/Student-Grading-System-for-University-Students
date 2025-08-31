@@ -44,7 +44,7 @@ function loginButton(event) {
     .then(response => response.text())
     .then(data => {
         if(!data) {
-            console.log(data);
+            //console.log(data);
             alert('Not a valid email!');
             return;
         }

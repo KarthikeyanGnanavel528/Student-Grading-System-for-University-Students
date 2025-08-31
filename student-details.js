@@ -52,4 +52,5 @@ function save() {
     .then(data => console.log("Server says:", data))
     .catch(error => console.error("Error:", error));
     alert('data saved! Now Go Login!');
+    window.location.href = 'student-login.html';
 }
